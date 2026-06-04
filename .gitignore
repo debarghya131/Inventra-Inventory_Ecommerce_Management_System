@@ -8,8 +8,11 @@
 .fleet
 .phpactor.json
 .phpunit.result.cache
+/.agents
+/.claude
 /.codex
 /.cursor/
+/.github/skills
 /.idea
 /.nova
 /.phpunit.cache
