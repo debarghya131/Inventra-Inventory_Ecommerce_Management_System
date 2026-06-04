@@ -1,0 +1,47 @@
+<svg width="520" height="82" viewBox="0 0 520 82" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Inventra build progress</title>
+  <desc id="desc">Animated green progress bar showing 69 percent completion.</desc>
+
+  <defs>
+    <linearGradient id="fill" x1="0" y1="0" x2="520" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16a34a"/>
+      <stop offset="0.5" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#86efac"/>
+    </linearGradient>
+
+    <linearGradient id="shine" x1="-120" y1="0" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform
+        attributeName="gradientTransform"
+        type="translate"
+        from="-180 0"
+        to="600 0"
+        dur="2.1s"
+        repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="520" height="82" rx="16" fill="#052e16"/>
+  <text x="26" y="31" fill="#dcfce7" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">
+    Coming Soon
+  </text>
+  <text x="440" y="31" fill="#bbf7d0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="end">
+    69%
+  </text>
+
+  <rect x="26" y="48" width="468" height="14" rx="7" fill="#14532d"/>
+  <rect x="26" y="48" width="0" height="14" rx="7" fill="url(#fill)" filter="url(#glow)">
+    <animate attributeName="width" from="0" to="323" dur="1.25s" fill="freeze" begin="0s"/>
+  </rect>
+  <rect x="26" y="48" width="323" height="14" rx="7" fill="url(#shine)" opacity="0.9"/>
+</svg>
